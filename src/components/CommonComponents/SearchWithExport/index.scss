@@ -1,0 +1,26 @@
+.portal_filter__export__btn {
+  display: flex;
+  align-items: center;
+  z-index: 99;
+  margin-top: 5px;
+
+  .ant-btn-primary {
+    &.active {
+      img {
+        filter: brightness(10);
+      }
+    }
+  }
+
+  img {
+    width: 14px;
+    height: 14px;
+    filter: brightness(0.4);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .search_filter_position {
+    margin-bottom: 20px !important;
+  }
+}

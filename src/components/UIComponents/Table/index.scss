@@ -1,0 +1,69 @@
+@import "./tooltip.scss";
+
+.highlight_row {
+  background: #ece6e6 !important;
+}
+
+.highlight_row_anchor {
+  background: #f9e79f !important;
+}
+
+.react-resizable {
+  position: relative;
+  background-clip: padding-box;
+}
+
+.react-resizable-handle {
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+  z-index: 1;
+  width: 10px;
+  height: 100%;
+  cursor: col-resize;
+}
+
+.mobile_card__title,
+.mobile_card_view__text {
+  overflow-wrap: break-word;
+  margin-right: 6px;
+}
+
+.card_overlay {
+  z-index: 99;
+}
+
+.mobile_card__title p {
+  margin: 0;
+  font-weight: bolder;
+}
+
+.fulfillment__status_listing {
+  overflow: auto;
+  height: 50vh;
+  width: 200px;
+}
+
+.action-not-allowed {
+  color: #00000040;
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+  /* pointer-events: none; */
+  cursor: not-allowed;
+}
+
+.text-value-with-icon {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+}
+
+.details_icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}

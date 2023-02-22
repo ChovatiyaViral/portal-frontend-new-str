@@ -1,0 +1,14 @@
+.lead_tabs {
+  position: relative;
+  background-color: #ffffff;
+  padding-top: 30px;
+
+  .add_new_lead_btn {
+    display: flex;
+    justify-content: flex-end;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

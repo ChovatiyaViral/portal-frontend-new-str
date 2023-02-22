@@ -1,0 +1,41 @@
+.character_box {
+    display: block;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 8px 0px;
+
+    .title {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        h6 {
+            margin: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .character_box {
+        display: block;
+        border-bottom: 1px solid #EEEEEE;
+        padding: 14.4186px 17.3023px;
+        margin: 0px -19px;
+        background: #FFFFFF;
+
+        .title {
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            h6 {
+                font-size: 10px;
+                margin: 0px;
+            }
+
+            img {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+}

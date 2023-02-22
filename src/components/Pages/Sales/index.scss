@@ -1,0 +1,55 @@
+.sales_order__customer_details__add_new {
+  position: relative;
+  z-index: 9;
+  color: #1890ff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sale-order-divider {
+  padding: 0 1rem;
+
+  p {
+    margin-bottom: -10px;
+    color: #a7a7a7;
+
+    &.text-black {
+      color: rgba(0, 0, 0, 0.85) !important;
+    }
+  }
+}
+
+.pound-icon {
+  margin-top: 0px;
+  margin-right: 4px;
+  font-size: 18px;
+  color: #8a8a8a;
+}
+
+.steps-content {
+  border: none;
+}
+
+.create-order-fields-padding {
+  padding-left: 18px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .create-order-fields-padding {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .create-new-sales-order-text {
+    gap: 5px;
+  }
+
+  .create-order-fields-padding {
+    padding-left: 0px;
+  }
+
+  .sale-order-divider {
+    padding: 0px;
+  }
+}

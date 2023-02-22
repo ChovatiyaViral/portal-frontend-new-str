@@ -1,0 +1,69 @@
+@import "./common.scss";
+@import "./customClass.scss";
+@import "../../components//CommonComponents/SearchWithExport/index.scss";
+@import "react-phone-number-input/style.css";
+@import "./task.scss";
+@import "./appThemeOverride.scss";
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #f0f0f7;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+p {
+  margin: 0;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #43425d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #43425d;
+}
+
+svg {
+  vertical-align: initial;
+}
+
+.text-overflow {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+}

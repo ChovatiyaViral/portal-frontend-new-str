@@ -1,0 +1,107 @@
+.App {
+  .welcome_note {
+    text-align: center;
+    margin-top: 5%;
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.customOverflow {
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 20px 0 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app_heading {
+  color: #43425d;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.bg-secondary {
+  background: #43425d !important;
+}
+
+.footer {
+  background: #43425d !important;
+  position: fixed;
+  float: left;
+  width: 100%;
+  bottom: 0;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.default-float-width {
+  float: left;
+  width: 100%;
+}
+
+.search_filter_position {
+  position: relative;
+  z-index: 9;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    .welcome_note {
+      position: unset;
+      margin-top: 30%;
+    }
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .custom_table_dynamic_data_title {
+    width: 80%;
+  }
+
+  .action_btn_section {
+    top: 0px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .search_filter_card {
+    box-shadow: 0 0 10px #e1e1ec;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 11px;
+  }
+}

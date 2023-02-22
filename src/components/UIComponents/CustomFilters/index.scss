@@ -1,0 +1,119 @@
+.custom_filter_sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 999;
+  background: #ffffff;
+  box-shadow: 0px -3px 11px rgba(23, 43, 77, 0.01), 0px -5px 18px rgba(23, 43, 77, 0.12);
+  border-radius: 10px 0px 0px 0px;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+
+  &.open {
+    width: 450px;
+  }
+
+  &.close {
+    width: 0px;
+  }
+
+  .filter_main_section {
+    display: block;
+
+    .filter_header_section {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #eeeeee;
+      padding: 20px 20px 19px 30px;
+
+      h1 {
+        margin: 0px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #171b1e;
+        margin-right: auto;
+      }
+
+      svg {
+        font-size: 16px;
+        margin: 4px;
+      }
+    }
+
+    .portal__listing__search {
+      margin: 17px 30px;
+    }
+  }
+
+  .tab_panel_section {
+    display: block;
+    height: calc(100vh - 350px);
+    margin-bottom: 29px;
+    overflow-y: scroll;
+  }
+
+  .filter_footer_section {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    margin-top: auto;
+    box-shadow: 0px -3px 11px rgba(23, 43, 77, 0.01), 0px -5px 18px rgba(23, 43, 77, 0.12);
+    padding: 20px 36px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .custom_filter_sidebar {
+    &.open {
+      width: 100vw;
+    }
+
+    .filter_main_section {
+      .tab_panel_section {
+        .ant-tabs {
+          .ant-tabs-nav {
+            width: 30vw;
+
+            .ant-tabs-tab {
+              padding: 8px 10px;
+
+              .ant-tabs-tab-btn {
+                .ant-badge {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+
+        .ant-tabs-content-holder {
+          width: 70vw;
+
+          .ant-tabs-content {
+            .ant-tabs-tabpane {
+              padding-left: 10px;
+
+              .ant-checkbox-group {
+                .ant-checkbox-wrapper {
+                  span {
+                    font-size: 10px;
+                    word-break: break-all;
+                    line-height: 10px;
+                  }
+                }
+              }
+
+              label,
+              p {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

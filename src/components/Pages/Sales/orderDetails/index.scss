@@ -1,0 +1,18 @@
+.order_details__summary {
+    .CFA {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 18px;
+    }
+}
+
+p {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.proforma_view__document__name {
+    word-break: break-all;
+}

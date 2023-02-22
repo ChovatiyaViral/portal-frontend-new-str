@@ -1,0 +1,14 @@
+.view_document {
+  .document-view {
+    height: 350px;
+    padding-right: 20px;
+  }
+}
+
+.view__proforma {
+  .document-view {
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+}

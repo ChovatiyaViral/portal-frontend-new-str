@@ -1,0 +1,75 @@
+.mobile__header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 16px 16px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 9;
+
+    span {
+        svg {
+            font-size: 24px;
+        }
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        margin: 0px;
+        color: #171B1E;
+        padding-left: 20px;
+    }
+
+    .cancel_btn {
+        margin-left: auto;
+        border: 0px;
+        padding: 0px;
+
+        &::after,
+        &::before {
+            box-shadow: none !important;
+        }
+
+        span {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: right;
+            color: #38479E;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mobile__header h1 {
+        line-height: 14px;
+
+        .details__card_title {
+
+            .details__summary__card_content__title,
+            .details__summary__card_content__value {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .mobile__header h1 {
+        line-height: 10px;
+
+        .details__card_title {
+            img {
+                width: 25px;
+                height: 25px;
+            }
+            .details__summary__card_content__title,
+            .details__summary__card_content__value {
+                font-size: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.p-20 {
+    padding: 20px !important;
+}
+
+.p-40 {
+    padding: 40px !important;
+}
+
+.pl-30 {
+    padding-left: 30px !important;
+}
+
+.h-104 {
+    height: 104px !important;
+}
+
+.h-75 {
+    height: 75px !important;
+}
+
+.mt-40 {
+    margin-top: 40px !important;
+}
+
+.border-radius-12 {
+    border-radius: 12px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .p-40 {
+        padding: 20px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .p-40 {
+        padding: 0px !important;
+    }
+}
+

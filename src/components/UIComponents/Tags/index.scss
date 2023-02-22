@@ -1,0 +1,30 @@
+.custom_editable_tags {
+    overflow-y: auto;
+
+    .site-tag-plus {
+        background: #fff;
+        border-style: dashed;
+        cursor: pointer;
+    }
+
+    .edit-tag {
+        background: transparent;
+        border: 1px solid #38479e;
+        border-radius: 12px;
+        color: #38479e;
+        cursor: pointer;
+        padding: 4px 10px;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .edit-tag.active {
+        color: #fff;
+    }
+
+    .tag-input {
+        width: 250px;
+        margin-right: 8px;
+        vertical-align: top;
+    }
+}
